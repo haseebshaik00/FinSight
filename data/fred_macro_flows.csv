@@ -1,0 +1,6 @@
+Indicator,Code,1M Change %,3M Change %,6M Change %,1Y Change %
+10Y Treasury Rate,DGS10,1.36,0.22,3.94,-4.48
+Fed Funds Rate,FEDFUNDS,-15.43,179.35,4711.11,243.65
+Inflation (CPI),CPIAUCSL,5.16,24.21,35.2,75.13
+Unemployment Rate,UNRATE,20.0,16.67,-33.33,-31.15
+High Yield Spread,BAMLH0A0HYM2,-18.55,24.05,19.49,5.18
