@@ -11,8 +11,6 @@ export default function Navbar() {
           <Link to="/assets" className="hover:underline">Assets</Link>
           <Link to="/invest" className="hover:underline">Invest</Link>
           <Link to="/about" className="hover:underline">About</Link>
-          <Link to="/signin" className="hover:underline">Sign In</Link>
-          <Link to="/signup" className="hover:underline">Sign Up</Link>
         </div>
       </div>
     </nav>

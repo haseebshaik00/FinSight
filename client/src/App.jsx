@@ -5,10 +5,7 @@ import Savings from './pages/Savings';
 import Assets from './pages/Assets';
 import Invest from './pages/Invest';
 import About from './pages/About';
-import SignIn from './pages/SignIn';
-import SignUp from './pages/SignUp';
 import Auth from './pages/Auth';
-import Footer from './components/Footer';
 
 export default function App() {
   const location = useLocation();
@@ -64,25 +61,7 @@ export default function App() {
             </div>
           }
         />
-        <Route
-          path="/signin"
-          element={
-            <div className="p-6 max-w-6xl mx-auto">
-              <SignIn />
-            </div>
-          }
-        />
-        <Route
-          path="/signup"
-          element={
-            <div className="p-6 max-w-6xl mx-auto">
-              <SignUp />
-            </div>
-          }
-        />
       </Routes>
-      {!isAuthPage && <Footer />}
-    </div>
-    
+    </div>   
   );
 }
