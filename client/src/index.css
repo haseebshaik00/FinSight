@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
-body{
+/* body{
     background-color: #1e293c;
-}
+} */
+
+body {
+    background-image: url('bg-image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
