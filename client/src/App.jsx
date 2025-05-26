@@ -19,12 +19,7 @@ export default function App() {
       {!isAuthPage && <Navbar setLoggedIn={setLoggedIn} />}
 
       <Routes>
-        <Route
-          path="/auth"
-          element={
-            loggedIn ? <Navigate to="/" /> : <Auth setLoggedIn={setLoggedIn} />
-          }
-        />
+        <Route path="/auth" element={loggedIn ? <Navigate to="/" /> : <Auth setLoggedIn={setLoggedIn} />}/>
         <Route
           path="/"
           element={

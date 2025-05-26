@@ -12,18 +12,42 @@ export default function Auth({ setLoggedIn }) {
   const handleChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   const endpoint = isSignUp ? "/api/auth/signup" : "/api/auth/login";
+  //   const res = await fetch(`http://localhost:5051${endpoint}`, {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/json" },
+  //     body: JSON.stringify(formData),
+  //   });
+  //   const data = await res.json();
+  //   if (!res.ok) return alert("Failed, Try again!");
+  //   setLoggedIn(true); // <- User is now logged in
+  // };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const endpoint = isSignUp ? "/api/auth/signup" : "/api/auth/login";
-    const res = await fetch(`http://localhost:5051${endpoint}`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData),
-    });
-    const data = await res.json();
-    if (!res.ok) return alert("Failed, Try again!");
-    setLoggedIn(true); // <- User is now logged in
+    try {
+      const res = await fetch(`http://localhost:5051${endpoint}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        alert(data.message || "Failed, try again!");
+        return;
+      }
+      localStorage.setItem("token", data.token);
+      localStorage.setItem("user", JSON.stringify(data.user));
+      setLoggedIn(true);
+    } catch (err) {
+      console.error(err);
+      alert("Something went wrong. Please try again!");
+    }
   };
+  
 
   return (
     <div className="flex flex-col min-h-screen bg-[#0f172a] text-white">
