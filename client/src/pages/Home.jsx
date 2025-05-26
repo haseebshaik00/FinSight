@@ -91,7 +91,7 @@ export default function Home() {
             type="number"
             id="amount"
             name="amount"
-            placeholder="USD"
+            placeholder="$ 00.00 USD"
             value={formData.amount}
             onChange={handleChange}
             className="w-full border px-3 py-2 rounded"

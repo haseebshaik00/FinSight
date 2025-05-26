@@ -15,6 +15,15 @@ export default function PieChart({ data }) {
     const radius = Math.min(width, height) / 2 - 20;
     const color = d3.scaleOrdinal(d3.schemeTableau10);
 
+    svg.append("text")
+      .attr("x", (width + 320) / 2)
+      .attr("y", 330)
+      .attr("text-anchor", "middle")
+      .style("font-size", "18px")
+      .style("font-weight", "700")
+      .style("fill", "#1e3a8a")
+      .text("Category-wise Spending");
+
     const categorySums = d3.rollups(
       data,
       v => d3.sum(v, d => +d.amount),
