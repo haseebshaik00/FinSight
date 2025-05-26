@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Auth() {
+export default function Auth({ setLoggedIn }) {
   const [isSignUp, setIsSignUp] = useState(true);
   const [formData, setFormData] = useState({
     name: "",
@@ -22,6 +22,7 @@ export default function Auth() {
     });
     const data = await res.json();
     if (!res.ok) return alert("Failed, Try again!");
+    setLoggedIn(true); // <- User is now logged in
   };
 
   return (

@@ -1,4 +1,5 @@
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
+import { useState } from 'react';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Savings from './pages/Savings';
@@ -11,46 +12,65 @@ export default function App() {
   const location = useLocation();
   const isAuthPage = location.pathname === '/auth';
 
+  const [loggedIn, setLoggedIn] = useState(false);
+
   return (
     <div className="min-h-screen font-sans">
-      {/* Hide navbar only on the auth page */}
-      {!isAuthPage && <Navbar />}
+      {!isAuthPage && <Navbar setLoggedIn={setLoggedIn} />}
 
       <Routes>
-        {/* Fullscreen Auth route */}
-        <Route path="/auth" element={<Auth />} />
-
-        {/* Other routes with standard padding/layout */}
+        <Route
+          path="/auth"
+          element={
+            loggedIn ? <Navigate to="/" /> : <Auth setLoggedIn={setLoggedIn} />
+          }
+        />
         <Route
           path="/"
           element={
-            <div className="p-6 max-w-6xl mx-auto">
-              <Home />
-            </div>
+            loggedIn ? (
+              <div className="p-6 max-w-6xl mx-auto">
+                <Home />
+              </div>
+            ) : (
+              <Navigate to="/auth" />
+            )
           }
         />
         <Route
           path="/savings"
           element={
-            <div className="p-6 max-w-6xl mx-auto">
-              <Savings />
-            </div>
+            loggedIn ? (
+              <div className="p-6 max-w-6xl mx-auto">
+                <Savings />
+              </div>
+            ) : (
+              <Navigate to="/auth" />
+            )
           }
         />
         <Route
           path="/assets"
           element={
-            <div className="p-6 max-w-6xl mx-auto">
-              <Assets />
-            </div>
+            loggedIn ? (
+              <div className="p-6 max-w-6xl mx-auto">
+                <Assets />
+              </div>
+            ) : (
+              <Navigate to="/auth" />
+            )
           }
         />
         <Route
           path="/invest"
           element={
-            <div className="p-6 max-w-6xl mx-auto">
-              <Invest />
-            </div>
+            loggedIn ? (
+              <div className="p-6 max-w-6xl mx-auto">
+                <Invest />
+              </div>
+            ) : (
+              <Navigate to="/auth" />
+            )
           }
         />
         <Route
@@ -62,6 +82,6 @@ export default function App() {
           }
         />
       </Routes>
-    </div>   
+    </div>
   );
 }
