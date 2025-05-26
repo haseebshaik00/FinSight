@@ -61,7 +61,7 @@ export default function Home() {
 
   return (
     <PageContainer>
-      <div className="bg-white shadow-md rounded p-6 mb-8 w-full">
+      <div className="bg-white shadow-md rounded-xl p-6 mb-8 w-full">
         <h3 className="text-xl font-semibold mb-4 text-gray-700">Enter New Expense</h3>
         <form
           onSubmit={handleSubmit}
@@ -116,16 +116,16 @@ export default function Home() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div className="bg-white shadow-md rounded p-4">
+        <div className="w-full bg-white rounded-xl p-4 shadow-md">
           <PieChart data={transactions} />
         </div>
-        <div className="bg-white shadow-md rounded p-4">
+        <div className="w-full bg-white rounded-xl p-4 shadow-md">
           <BarChart data={transactions} />
         </div>
-        <div className="bg-white shadow-md rounded p-4">
+        <div className="w-full bg-white rounded-xl p-4 shadow-md">
           <LineChart data={transactions} />
         </div>
-        <div className="bg-white shadow-md rounded p-4">
+        <div className="w-full bg-white rounded-xl p-4 shadow-md">
           <Heatmap data={transactions} />
         </div>
       </div>
