@@ -6,7 +6,7 @@ export default function Auth() {
     name: "",
     email: "",
     password: "",
-    monthlyIncome: "",
+    income: "",
   });
 
   const handleChange = (e) =>
@@ -14,15 +14,14 @@ export default function Auth() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const endpoint = isSignUp ? "/api/signup" : "/api/signin";
-    const res = await fetch(`http://localhost:8000${endpoint}`, {
+    const endpoint = isSignUp ? "/api/auth/signup" : "/api/auth/login";
+    const res = await fetch(`http://localhost:5051${endpoint}`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
     });
     const data = await res.json();
-    if (!res.ok) return alert(data.message || "Failed");
-    alert(`${isSignUp ? "Signed up" : "Signed in"} successfully!`);
+    if (!res.ok) return alert("Failed, Try again!");
   };
 
   return (
@@ -110,9 +109,9 @@ export default function Auth() {
                     </span>
                     <input
                       type="number"
-                      name="monthlyIncome"
+                      name="income"
                       placeholder="5000"
-                      value={formData.monthlyIncome}
+                      value={formData.income}
                       onChange={handleChange}
                       className="w-full bg-[#1e293b] border border-gray-700 text-white px-4 py-2 pl-8 rounded-lg"
                       required
