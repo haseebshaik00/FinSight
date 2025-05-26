@@ -1,5 +1,9 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import PageContainer from "../components/PageContainer";
+import BarChart from "../components/viz/BarChart";
+import PieChart from "../components/viz/PieChart";
+import LineChart from "../components/viz/LineChart";
+import Heatmap from "../components/viz/Heatmap";
 
 export default function Home() {
   const [formData, setFormData] = useState({
@@ -7,46 +11,56 @@ export default function Home() {
     category: "",
     amount: "",
   });
+  const [transactions, setTransactions] = useState([]);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  const fetchTransactions = async () => {
+    const token = localStorage.getItem("token");
+    try {
+      const res = await fetch("http://localhost:5051/api/transactions", {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+      const data = await res.json();
+      if (res.ok) setTransactions(data);
+      else throw new Error(data.message);
+    } catch (err) {
+      alert("Failed to load transactions: " + err.message);
+    }
+  };
+
+  useEffect(() => {
+    fetchTransactions();
+  }, []);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     const token = localStorage.getItem("token");
-
     try {
       const res = await fetch("http://localhost:5051/api/transactions", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`, // ✅ Send token in header
+          Authorization: `Bearer ${token}`,
         },
         body: JSON.stringify(formData),
       });
-
       const data = await res.json();
       if (!res.ok) throw new Error(data.message || "Failed to add expense");
-
       alert("Expense added successfully!");
-
-      // ✅ Clear the form
-      setFormData({
-        date: "",
-        category: "",
-        amount: "",
-      });
+      setFormData({ date: "", category: "", amount: "" });
+      fetchTransactions();
     } catch (err) {
       alert(err.message);
     }
   };
 
-
   return (
     <PageContainer>
-      {/* Expense Form Full Width */}
       <div className="bg-white shadow-md rounded p-6 mb-8 w-full">
         <h3 className="text-xl font-semibold mb-4 text-gray-700">Enter New Expense</h3>
         <form
@@ -101,19 +115,18 @@ export default function Home() {
         </form>
       </div>
 
-      {/* 4 Visualization Placeholders */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div className="bg-white shadow-md rounded p-4 h-64 flex items-center justify-center text-gray-400">
-          Visualization 1 Placeholder
+        <div className="bg-white shadow-md rounded p-4">
+          <PieChart data={transactions} />
         </div>
-        <div className="bg-white shadow-md rounded p-4 h-64 flex items-center justify-center text-gray-400">
-          Visualization 2 Placeholder
+        <div className="bg-white shadow-md rounded p-4">
+          <BarChart data={transactions} />
         </div>
-        <div className="bg-white shadow-md rounded p-4 h-64 flex items-center justify-center text-gray-400">
-          Visualization 3 Placeholder
+        <div className="bg-white shadow-md rounded p-4">
+          <LineChart data={transactions} />
         </div>
-        <div className="bg-white shadow-md rounded p-4 h-64 flex items-center justify-center text-gray-400">
-          Visualization 4 Placeholder
+        <div className="bg-white shadow-md rounded p-4">
+          <Heatmap data={transactions} />
         </div>
       </div>
     </PageContainer>
