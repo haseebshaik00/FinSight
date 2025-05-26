@@ -14,9 +14,9 @@ export default function Home() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
-    const token = localStorage.getItem("token"); // 🛡️ Retrieve stored token
-  
+
+    const token = localStorage.getItem("token");
+
     try {
       const res = await fetch("http://localhost:5051/api/transactions", {
         method: "POST",
@@ -26,15 +26,23 @@ export default function Home() {
         },
         body: JSON.stringify(formData),
       });
-  
+
       const data = await res.json();
       if (!res.ok) throw new Error(data.message || "Failed to add expense");
-  
+
       alert("Expense added successfully!");
+
+      // ✅ Clear the form
+      setFormData({
+        date: "",
+        category: "",
+        amount: "",
+      });
     } catch (err) {
       alert(err.message);
     }
-  };  
+  };
+
 
   return (
     <PageContainer>
