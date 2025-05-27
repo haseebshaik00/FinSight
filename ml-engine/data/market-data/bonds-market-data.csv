@@ -1,0 +1,5 @@
+Indicator,Code,1M Change %,3M Change %,6M Change %,1Y Change %
+10Y_Treasury_Rate,DGS10,3.18,0.22,2.48,-0.87
+Fed_Funds_Rate,FEDFUNDS,-15.43,179.35,4711.11,243.65
+Inflation_CPI,CPIAUCSL,5.16,24.21,35.2,75.13
+High_Yield_Spread,BAMLH0A0HYM2,-11.47,23.88,22.06,8.14
