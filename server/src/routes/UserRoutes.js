@@ -6,6 +6,18 @@ const protect = require('../middlewares/authMiddleware');
 // Apply middleware globally
 router.use(protect);
 
+router.get('/me', async (req, res) => {
+  try {
+    const user = await User.findById(req.user.id).select('-password');
+    console.log("error")
+    if (!user) return res.status(404).json({ message: 'User not found' });
+    res.json(user);
+  } catch (err) {
+    console.log("error")
+    res.status(500).json({ message: err.message });
+  }
+});
+
 // PUT /api/users/:id/risk-profile
 router.put('/:id/risk-profile', async (req, res) => {
     try {
