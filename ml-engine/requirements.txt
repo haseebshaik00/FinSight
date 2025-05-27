@@ -3,3 +3,5 @@ pandas
 bs4
 yfinance
 fredapi
+scikit-learn
+torch
