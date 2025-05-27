@@ -32,6 +32,7 @@ exports.signup = async (req, res) => {
 // LOGIN: POST /api/auth/login
 exports.login = async (req, res) => {
   const { email, password } = req.body;
+   console.log('Signup request received:', req.body);
 
   try {
     const user = await User.findOne({ email });

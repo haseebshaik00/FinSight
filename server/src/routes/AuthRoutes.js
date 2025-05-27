@@ -6,3 +6,7 @@ router.post('/signup', signup);
 router.post('/login', login);
 
 module.exports = router;
+
+router.get('/ping', (req, res) => {
+  res.send('pong');
+});

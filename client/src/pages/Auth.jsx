@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useEffect } from "react";
 
 export default function Auth({ setLoggedIn }) {
   const [isSignUp, setIsSignUp] = useState(true);
@@ -28,6 +29,8 @@ export default function Auth({ setLoggedIn }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const endpoint = isSignUp ? "/api/auth/signup" : "/api/auth/login";
+    console.log("📤 Submitting to:", `http://localhost:5051${endpoint}`);
+    console.log("🧾 Payload:", formData);
     try {
       const res = await fetch(`http://localhost:5051${endpoint}`, {
         method: "POST",
@@ -47,6 +50,13 @@ export default function Auth({ setLoggedIn }) {
       alert("Something went wrong. Please try again!");
     }
   };
+
+  useEffect(() => {
+    fetch("http://localhost:5051/api/auth/ping")
+      .then(res => res.text())
+      .then(console.log)
+      .catch(console.error);
+  }, []);
   
 
   return (
