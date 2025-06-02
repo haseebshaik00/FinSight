@@ -1,0 +1,992 @@
+[
+  {
+    "date": "2024-06-21",
+    "category": "Self Care",
+    "amount": 57.2
+  },
+  {
+    "date": "2024-06-30",
+    "category": "Shopping",
+    "amount": 76.33
+  },
+  {
+    "date": "2024-06-16",
+    "category": "Rent",
+    "amount": 822.12
+  },
+  {
+    "date": "2024-06-10",
+    "category": "Shopping",
+    "amount": 110.36
+  },
+  {
+    "date": "2024-06-28",
+    "category": "EMIs",
+    "amount": 264.31
+  },
+  {
+    "date": "2024-06-08",
+    "category": "Gas",
+    "amount": 94.32
+  },
+  {
+    "date": "2024-06-18",
+    "category": "Entertainment",
+    "amount": 78.47
+  },
+  {
+    "date": "2024-06-27",
+    "category": "Food and Groceries",
+    "amount": 78.37
+  },
+  {
+    "date": "2024-06-11",
+    "category": "Entertainment",
+    "amount": 105.5
+  },
+  {
+    "date": "2024-06-26",
+    "category": "Food and Groceries",
+    "amount": 128.81
+  },
+  {
+    "date": "2024-06-12",
+    "category": "Self Care",
+    "amount": 58.85
+  },
+  {
+    "date": "2024-06-13",
+    "category": "Entertainment",
+    "amount": 22.77
+  },
+  {
+    "date": "2024-07-24",
+    "category": "Utilities",
+    "amount": 103.81
+  },
+  {
+    "date": "2024-07-02",
+    "category": "Medical Bills",
+    "amount": 121.11
+  },
+  {
+    "date": "2024-07-21",
+    "category": "Shopping",
+    "amount": 99.6
+  },
+  {
+    "date": "2024-07-08",
+    "category": "Medical Bills",
+    "amount": 57.55
+  },
+  {
+    "date": "2024-07-25",
+    "category": "Entertainment",
+    "amount": 105.54
+  },
+  {
+    "date": "2024-07-09",
+    "category": "Utilities",
+    "amount": 111.5
+  },
+  {
+    "date": "2024-07-14",
+    "category": "Shopping",
+    "amount": 108.91
+  },
+  {
+    "date": "2024-07-31",
+    "category": "Food and Groceries",
+    "amount": 90.02
+  },
+  {
+    "date": "2024-07-06",
+    "category": "Self Care",
+    "amount": 46.53
+  },
+  {
+    "date": "2024-07-27",
+    "category": "EMIs",
+    "amount": 462.83
+  },
+  {
+    "date": "2024-07-26",
+    "category": "Shopping",
+    "amount": 75.01
+  },
+  {
+    "date": "2024-07-23",
+    "category": "Shopping",
+    "amount": 68.73
+  },
+  {
+    "date": "2024-08-21",
+    "category": "Utilities",
+    "amount": 170.99
+  },
+  {
+    "date": "2024-08-20",
+    "category": "Miscellaneous",
+    "amount": 17.37
+  },
+  {
+    "date": "2024-08-01",
+    "category": "Medical Bills",
+    "amount": 148.16
+  },
+  {
+    "date": "2024-08-16",
+    "category": "Self Care",
+    "amount": 86.09
+  },
+  {
+    "date": "2024-08-18",
+    "category": "Shopping",
+    "amount": 79.75
+  },
+  {
+    "date": "2024-08-15",
+    "category": "Self Care",
+    "amount": 35.42
+  },
+  {
+    "date": "2024-08-23",
+    "category": "EMIs",
+    "amount": 487.57
+  },
+  {
+    "date": "2024-08-03",
+    "category": "Food and Groceries",
+    "amount": 67.82
+  },
+  {
+    "date": "2024-08-29",
+    "category": "Rent",
+    "amount": 849.52
+  },
+  {
+    "date": "2024-08-17",
+    "category": "Entertainment",
+    "amount": 43.08
+  },
+  {
+    "date": "2024-08-10",
+    "category": "Medical Bills",
+    "amount": 148.87
+  },
+  {
+    "date": "2024-08-26",
+    "category": "Medical Bills",
+    "amount": 64.59
+  },
+  {
+    "date": "2024-09-26",
+    "category": "Self Care",
+    "amount": 60.47
+  },
+  {
+    "date": "2024-09-29",
+    "category": "Gas",
+    "amount": 78.19
+  },
+  {
+    "date": "2024-09-21",
+    "category": "Medical Bills",
+    "amount": 67.1
+  },
+  {
+    "date": "2024-09-15",
+    "category": "Rent",
+    "amount": 1026.11
+  },
+  {
+    "date": "2024-09-23",
+    "category": "Entertainment",
+    "amount": 103.0
+  },
+  {
+    "date": "2024-09-28",
+    "category": "Food and Groceries",
+    "amount": 111.85
+  },
+  {
+    "date": "2024-09-18",
+    "category": "Miscellaneous",
+    "amount": 71.12
+  },
+  {
+    "date": "2024-09-13",
+    "category": "Medical Bills",
+    "amount": 69.73
+  },
+  {
+    "date": "2024-09-14",
+    "category": "Medical Bills",
+    "amount": 61.9
+  },
+  {
+    "date": "2024-09-05",
+    "category": "Utilities",
+    "amount": 173.06
+  },
+  {
+    "date": "2024-09-22",
+    "category": "EMIs",
+    "amount": 339.92
+  },
+  {
+    "date": "2024-09-27",
+    "category": "Miscellaneous",
+    "amount": 32.51
+  },
+  {
+    "date": "2024-10-28",
+    "category": "Self Care",
+    "amount": 91.79
+  },
+  {
+    "date": "2024-10-01",
+    "category": "Self Care",
+    "amount": 68.23
+  },
+  {
+    "date": "2024-10-09",
+    "category": "Entertainment",
+    "amount": 34.69
+  },
+  {
+    "date": "2024-10-13",
+    "category": "Miscellaneous",
+    "amount": 76.3
+  },
+  {
+    "date": "2024-10-25",
+    "category": "EMIs",
+    "amount": 445.33
+  },
+  {
+    "date": "2024-10-22",
+    "category": "Entertainment",
+    "amount": 68.84
+  },
+  {
+    "date": "2024-10-27",
+    "category": "Miscellaneous",
+    "amount": 62.54
+  },
+  {
+    "date": "2024-10-15",
+    "category": "Shopping",
+    "amount": 79.15
+  },
+  {
+    "date": "2024-10-17",
+    "category": "Entertainment",
+    "amount": 62.13
+  },
+  {
+    "date": "2024-10-16",
+    "category": "Miscellaneous",
+    "amount": 72.77
+  },
+  {
+    "date": "2024-10-23",
+    "category": "Food and Groceries",
+    "amount": 109.73
+  },
+  {
+    "date": "2024-10-21",
+    "category": "Utilities",
+    "amount": 168.1
+  },
+  {
+    "date": "2024-11-30",
+    "category": "Self Care",
+    "amount": 83.07
+  },
+  {
+    "date": "2024-11-12",
+    "category": "Miscellaneous",
+    "amount": 15.61
+  },
+  {
+    "date": "2024-11-17",
+    "category": "Entertainment",
+    "amount": 111.46
+  },
+  {
+    "date": "2024-11-13",
+    "category": "Gas",
+    "amount": 44.42
+  },
+  {
+    "date": "2024-11-06",
+    "category": "EMIs",
+    "amount": 231.55
+  },
+  {
+    "date": "2024-11-26",
+    "category": "EMIs",
+    "amount": 407.19
+  },
+  {
+    "date": "2024-11-09",
+    "category": "Entertainment",
+    "amount": 85.88
+  },
+  {
+    "date": "2024-11-21",
+    "category": "Entertainment",
+    "amount": 27.25
+  },
+  {
+    "date": "2024-11-18",
+    "category": "Food and Groceries",
+    "amount": 147.0
+  },
+  {
+    "date": "2024-11-23",
+    "category": "Food and Groceries",
+    "amount": 102.84
+  },
+  {
+    "date": "2024-11-08",
+    "category": "Food and Groceries",
+    "amount": 135.68
+  },
+  {
+    "date": "2024-11-27",
+    "category": "Self Care",
+    "amount": 65.48
+  },
+  {
+    "date": "2024-12-09",
+    "category": "Shopping",
+    "amount": 126.5
+  },
+  {
+    "date": "2024-12-22",
+    "category": "Entertainment",
+    "amount": 32.74
+  },
+  {
+    "date": "2024-12-13",
+    "category": "Miscellaneous",
+    "amount": 62.29
+  },
+  {
+    "date": "2024-12-02",
+    "category": "Rent",
+    "amount": 1030.15
+  },
+  {
+    "date": "2024-12-03",
+    "category": "Gas",
+    "amount": 50.42
+  },
+  {
+    "date": "2024-12-01",
+    "category": "EMIs",
+    "amount": 337.87
+  },
+  {
+    "date": "2024-12-05",
+    "category": "EMIs",
+    "amount": 234.44
+  },
+  {
+    "date": "2024-12-19",
+    "category": "Shopping",
+    "amount": 77.45
+  },
+  {
+    "date": "2024-12-26",
+    "category": "Utilities",
+    "amount": 143.73
+  },
+  {
+    "date": "2024-12-07",
+    "category": "Gas",
+    "amount": 68.9
+  },
+  {
+    "date": "2024-12-11",
+    "category": "Miscellaneous",
+    "amount": 19.25
+  },
+  {
+    "date": "2024-12-12",
+    "category": "Miscellaneous",
+    "amount": 11.67
+  },
+  {
+    "date": "2025-01-15",
+    "category": "Shopping",
+    "amount": 109.62
+  },
+  {
+    "date": "2025-01-05",
+    "category": "Gas",
+    "amount": 89.85
+  },
+  {
+    "date": "2025-01-22",
+    "category": "Utilities",
+    "amount": 121.05
+  },
+  {
+    "date": "2025-01-18",
+    "category": "Rent",
+    "amount": 704.87
+  },
+  {
+    "date": "2025-01-30",
+    "category": "Utilities",
+    "amount": 109.63
+  },
+  {
+    "date": "2025-01-27",
+    "category": "Self Care",
+    "amount": 94.36
+  },
+  {
+    "date": "2025-01-01",
+    "category": "Medical Bills",
+    "amount": 90.01
+  },
+  {
+    "date": "2025-01-03",
+    "category": "EMIs",
+    "amount": 333.01
+  },
+  {
+    "date": "2025-01-14",
+    "category": "Food and Groceries",
+    "amount": 68.24
+  },
+  {
+    "date": "2025-01-02",
+    "category": "Miscellaneous",
+    "amount": 41.86
+  },
+  {
+    "date": "2025-01-10",
+    "category": "Utilities",
+    "amount": 129.72
+  },
+  {
+    "date": "2025-01-24",
+    "category": "Medical Bills",
+    "amount": 72.34
+  },
+  {
+    "date": "2025-02-14",
+    "category": "Entertainment",
+    "amount": 49.39
+  },
+  {
+    "date": "2025-02-11",
+    "category": "Entertainment",
+    "amount": 55.49
+  },
+  {
+    "date": "2025-02-10",
+    "category": "Gas",
+    "amount": 52.29
+  },
+  {
+    "date": "2025-02-03",
+    "category": "EMIs",
+    "amount": 409.64
+  },
+  {
+    "date": "2025-02-09",
+    "category": "Self Care",
+    "amount": 60.94
+  },
+  {
+    "date": "2025-02-27",
+    "category": "Food and Groceries",
+    "amount": 68.1
+  },
+  {
+    "date": "2025-02-01",
+    "category": "Rent",
+    "amount": 1087.23
+  },
+  {
+    "date": "2025-02-16",
+    "category": "Miscellaneous",
+    "amount": 63.1
+  },
+  {
+    "date": "2025-02-07",
+    "category": "Entertainment",
+    "amount": 51.06
+  },
+  {
+    "date": "2025-02-02",
+    "category": "Food and Groceries",
+    "amount": 66.8
+  },
+  {
+    "date": "2025-02-18",
+    "category": "Entertainment",
+    "amount": 100.83
+  },
+  {
+    "date": "2025-02-06",
+    "category": "Shopping",
+    "amount": 108.0
+  },
+  {
+    "date": "2025-03-21",
+    "category": "Utilities",
+    "amount": 691.83
+  },
+  {
+    "date": "2025-03-13",
+    "category": "Medical Bills",
+    "amount": 183.04
+  },
+  {
+    "date": "2025-03-24",
+    "category": "EMIs",
+    "amount": 252.21
+  },
+  {
+    "date": "2025-03-08",
+    "category": "EMIs",
+    "amount": 500.2
+  },
+  {
+    "date": "2025-03-21",
+    "category": "Entertainment",
+    "amount": 180.2
+  },
+  {
+    "date": "2025-03-12",
+    "category": "Miscellaneous",
+    "amount": 859.07
+  },
+  {
+    "date": "2025-03-23",
+    "category": "Entertainment",
+    "amount": 134.24
+  },
+  {
+    "date": "2025-03-23",
+    "category": "Food and Groceries",
+    "amount": 751.74
+  },
+  {
+    "date": "2025-03-19",
+    "category": "Medical Bills",
+    "amount": 526.37
+  },
+  {
+    "date": "2025-03-05",
+    "category": "EMIs",
+    "amount": 719.11
+  },
+  {
+    "date": "2025-03-09",
+    "category": "Entertainment",
+    "amount": 465.56
+  },
+  {
+    "date": "2025-02-28",
+    "category": "EMIs",
+    "amount": 115.5
+  },
+  {
+    "date": "2025-03-18",
+    "category": "Medical Bills",
+    "amount": 234.85
+  },
+  {
+    "date": "2025-04-21",
+    "category": "Food and Groceries",
+    "amount": 231.9
+  },
+  {
+    "date": "2025-04-13",
+    "category": "Food and Groceries",
+    "amount": 124.18
+  },
+  {
+    "date": "2025-04-12",
+    "category": "EMIs",
+    "amount": 545.11
+  },
+  {
+    "date": "2025-04-04",
+    "category": "Miscellaneous",
+    "amount": 276.99
+  },
+  {
+    "date": "2025-04-15",
+    "category": "Utilities",
+    "amount": 423.91
+  },
+  {
+    "date": "2025-04-20",
+    "category": "Medical Bills",
+    "amount": 385.01
+  },
+  {
+    "date": "2025-04-14",
+    "category": "Entertainment",
+    "amount": 529.03
+  },
+  {
+    "date": "2025-03-30",
+    "category": "EMIs",
+    "amount": 417.23
+  },
+  {
+    "date": "2025-04-04",
+    "category": "Food and Groceries",
+    "amount": 355.58
+  },
+  {
+    "date": "2025-04-23",
+    "category": "Self Care",
+    "amount": 639.45
+  },
+  {
+    "date": "2025-04-02",
+    "category": "Rent",
+    "amount": 758.74
+  },
+  {
+    "date": "2025-04-10",
+    "category": "Miscellaneous",
+    "amount": 683.28
+  },
+  {
+    "date": "2025-04-23",
+    "category": "Miscellaneous",
+    "amount": 46.89
+  },
+  {
+    "date": "2025-05-09",
+    "category": "Self Care",
+    "amount": 825.61
+  },
+  {
+    "date": "2025-05-13",
+    "category": "Entertainment",
+    "amount": 73.06
+  },
+  {
+    "date": "2025-04-30",
+    "category": "EMIs",
+    "amount": 520.4
+  },
+  {
+    "date": "2025-05-06",
+    "category": "EMIs",
+    "amount": 519.92
+  },
+  {
+    "date": "2025-05-12",
+    "category": "Rent",
+    "amount": 742.73
+  },
+  {
+    "date": "2025-05-03",
+    "category": "Food and Groceries",
+    "amount": 598.29
+  },
+  {
+    "date": "2025-05-13",
+    "category": "Entertainment",
+    "amount": 107.63
+  },
+  {
+    "date": "2025-05-14",
+    "category": "Self Care",
+    "amount": 72.28
+  },
+  {
+    "date": "2025-05-15",
+    "category": "EMIs",
+    "amount": 558.62
+  },
+  {
+    "date": "2025-05-21",
+    "category": "Gas",
+    "amount": 66.89
+  },
+  {
+    "date": "2025-05-16",
+    "category": "Food and Groceries",
+    "amount": 226.22
+  },
+  {
+    "date": "2025-05-24",
+    "category": "Utilities",
+    "amount": 454.28
+  },
+  {
+    "date": "2025-05-18",
+    "category": "Gas",
+    "amount": 509.89
+  },
+  {
+    "date": "2025-05-01",
+    "category": "Gas",
+    "amount": 105.56
+  },
+  {
+    "date": "2025-05-25",
+    "category": "EMIs",
+    "amount": 513.27
+  },
+  {
+    "date": "2025-05-15",
+    "category": "Miscellaneous",
+    "amount": 247.74
+  },
+  {
+    "date": "2025-05-24",
+    "category": "Miscellaneous",
+    "amount": 594.26
+  },
+  {
+    "date": "2025-05-08",
+    "category": "Shopping",
+    "amount": 837.14
+  },
+  {
+    "date": "2025-06-23",
+    "category": "Self Care",
+    "amount": 327.54
+  },
+  {
+    "date": "2025-06-15",
+    "category": "Entertainment",
+    "amount": 461.74
+  },
+  {
+    "date": "2025-06-16",
+    "category": "EMIs",
+    "amount": 300.13
+  },
+  {
+    "date": "2025-06-08",
+    "category": "Food and Groceries",
+    "amount": 239.78
+  },
+  {
+    "date": "2025-06-03",
+    "category": "Medical Bills",
+    "amount": 545.99
+  },
+  {
+    "date": "2025-05-30",
+    "category": "Miscellaneous",
+    "amount": 847.98
+  },
+  {
+    "date": "2025-06-11",
+    "category": "Food and Groceries",
+    "amount": 111.56
+  },
+  {
+    "date": "2025-06-07",
+    "category": "Gas",
+    "amount": 316.81
+  },
+  {
+    "date": "2025-06-11",
+    "category": "EMIs",
+    "amount": 351.83
+  },
+  {
+    "date": "2025-06-16",
+    "category": "Entertainment",
+    "amount": 630.39
+  },
+  {
+    "date": "2025-06-21",
+    "category": "Entertainment",
+    "amount": 357.74
+  },
+  {
+    "date": "2025-05-28",
+    "category": "Rent",
+    "amount": 331.88
+  },
+  {
+    "date": "2025-07-03",
+    "category": "Entertainment",
+    "amount": 677.05
+  },
+  {
+    "date": "2025-07-11",
+    "category": "Entertainment",
+    "amount": 652.02
+  },
+  {
+    "date": "2025-07-15",
+    "category": "Gas",
+    "amount": 730.59
+  },
+  {
+    "date": "2025-07-09",
+    "category": "Rent",
+    "amount": 139.18
+  },
+  {
+    "date": "2025-07-09",
+    "category": "Utilities",
+    "amount": 791.08
+  },
+  {
+    "date": "2025-06-28",
+    "category": "Medical Bills",
+    "amount": 711.73
+  },
+  {
+    "date": "2025-07-06",
+    "category": "Rent",
+    "amount": 134.17
+  },
+  {
+    "date": "2025-07-14",
+    "category": "Food and Groceries",
+    "amount": 535.77
+  },
+  {
+    "date": "2025-07-21",
+    "category": "Shopping",
+    "amount": 398.65
+  },
+  {
+    "date": "2025-07-11",
+    "category": "Gas",
+    "amount": 584.36
+  },
+  {
+    "date": "2025-07-22",
+    "category": "Food and Groceries",
+    "amount": 533.45
+  },
+  {
+    "date": "2025-07-08",
+    "category": "Shopping",
+    "amount": 214.14
+  },
+  {
+    "date": "2025-07-19",
+    "category": "Self Care",
+    "amount": 174.25
+  },
+  {
+    "date": "2025-07-21",
+    "category": "Gas",
+    "amount": 281.31
+  },
+  {
+    "date": "2025-07-12",
+    "category": "Self Care",
+    "amount": 371.76
+  },
+  {
+    "date": "2025-07-09",
+    "category": "Rent",
+    "amount": 24.55
+  },
+  {
+    "date": "2025-07-11",
+    "category": "Gas",
+    "amount": 668.8
+  },
+  {
+    "date": "2025-07-15",
+    "category": "Miscellaneous",
+    "amount": 86.74
+  },
+  {
+    "date": "2025-07-08",
+    "category": "EMIs",
+    "amount": 193.88
+  },
+  {
+    "date": "2025-07-02",
+    "category": "Rent",
+    "amount": 37.74
+  },
+  {
+    "date": "2025-08-04",
+    "category": "Rent",
+    "amount": 80.85
+  },
+  {
+    "date": "2025-08-02",
+    "category": "Shopping",
+    "amount": 475.16
+  },
+  {
+    "date": "2025-07-31",
+    "category": "Food and Groceries",
+    "amount": 654.09
+  },
+  {
+    "date": "2025-08-16",
+    "category": "Rent",
+    "amount": 456.59
+  },
+  {
+    "date": "2025-08-04",
+    "category": "Self Care",
+    "amount": 344.98
+  },
+  {
+    "date": "2025-08-16",
+    "category": "Gas",
+    "amount": 359.91
+  },
+  {
+    "date": "2025-08-14",
+    "category": "Utilities",
+    "amount": 626.49
+  },
+  {
+    "date": "2025-08-19",
+    "category": "Entertainment",
+    "amount": 52.44
+  },
+  {
+    "date": "2025-08-07",
+    "category": "Utilities",
+    "amount": 646.95
+  },
+  {
+    "date": "2025-08-02",
+    "category": "Shopping",
+    "amount": 541.82
+  },
+  {
+    "date": "2025-08-21",
+    "category": "Food and Groceries",
+    "amount": 32.99
+  },
+  {
+    "date": "2025-08-19",
+    "category": "Gas",
+    "amount": 697.84
+  },
+  {
+    "date": "2025-08-02",
+    "category": "Utilities",
+    "amount": 606.32
+  },
+  {
+    "date": "2025-08-17",
+    "category": "Self Care",
+    "amount": 595.43
+  }
+]

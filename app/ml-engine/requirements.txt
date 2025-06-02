@@ -1,0 +1,15 @@
+requests
+pandas
+bs4
+yfinance
+fredapi
+scikit-learn
+torch
+fastapi
+uvicorn
+pydantic
+numpy
+pandas
+scikit-learn
+torch
+joblib

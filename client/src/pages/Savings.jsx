@@ -76,11 +76,22 @@ export default function Savings() {
   }, [transactions, income]);
 
   useEffect(() => {
-    fetch("http://localhost:5051/api/forecast")
-      .then((res) => res.json())
-      .then((data) => setForecastData(data))
-      .catch((err) => console.error("Forecast fetch error:", err));
-  }, []);
+  if (!transactions.length || !income) return;
+
+  fetch("http://localhost:8000/api/forecast", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      income,
+      transactions,
+    }),
+  })
+    .then((res) => res.json())
+    .then((data) => setForecastData(data))
+    .catch((err) => console.error("Forecast fetch error:", err));
+}, [income, transactions]);
 
   const generateSuggestions = () => {
     if (!forecastData.length) return null;
@@ -98,10 +109,9 @@ export default function Savings() {
     return messages;
   };
 
-  const totalForecastedSavings = forecastData.reduce(
-    (sum, d) => sum + (d.predicted_savings || 0),
-    0
-  );
+  const totalForecastedSavings = Array.isArray(forecastData)
+  ? forecastData.reduce((sum, d) => sum + (d.predicted_savings || 0), 0)
+  : 0;
 
   return (
     <PageContainer>
