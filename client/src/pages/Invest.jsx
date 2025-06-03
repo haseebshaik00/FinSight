@@ -2,7 +2,7 @@ import { useState } from "react";
 import PageContainer from "../components/PageContainer";
 import TreeMap from "../components/viz/TreeMap";
 import DonutChart from "../components/viz/DonutChart";
-import WaffleChart from "../components/viz/WaffleChart";
+import HorizontalBarChart from "../components/viz/HorizontalBarChart";
 import FunnelChart from "../components/viz/FunnelChart";
 
 export default function Asset() {
@@ -110,8 +110,8 @@ export default function Asset() {
                 <DonutChart data={allocation} />
               </div>
               <div className="bg-white shadow p-4 rounded-lg min-h-[300px]">
-                <h3 className="text-lg font-semibold mb-4 text-gray-800">Waffle Chart</h3>
-                <WaffleChart data={allocation} />
+                <h3 className="text-lg font-semibold mb-4 text-gray-800">Horizontal Bar Chart</h3>
+                <HorizontalBarChart data={allocation} />
               </div>
                <div className="bg-white shadow p-4 rounded-lg min-h-[300px]">
                 <h3 className="text-lg font-semibold mb-4 text-gray-800">Funnel Chart</h3>
