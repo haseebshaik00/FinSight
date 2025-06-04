@@ -1,10 +1,13 @@
 import PageContainer from "../components/PageContainer";
 import { useState } from "react";
+import TreeMapViz from "../components/viz/TreeMapViz";
+import DonutChart from "../components/viz/DonutChart";
+import TextSummaryBox from "../components/viz/TextSummaryBox";
 
 export default function Invest() {
   const [amount, setAmount] = useState("");
   const [risk, setRisk] = useState("Balanced");
-  const [output, setOutput] = useState([]);
+  const [allocationData, setAllocationData] = useState(null);
 
   const handleSubmit = () => {
     fetch("http://localhost:8000/api/invest", {
@@ -13,7 +16,10 @@ export default function Invest() {
       body: JSON.stringify({ amount: parseFloat(amount), risk_profile: risk }),
     })
       .then(res => res.json())
-      .then(data => setOutput(data.allocations))
+      .then((data) => {
+        setAllocationData(data.allocations);
+        console.log(allocationData);
+      })
       .catch(err => console.error("Error:", err));
   };
 
@@ -57,7 +63,7 @@ export default function Invest() {
           </div>
         </div>
 
-        {output?.length > 0 && (
+        {/* {output?.length > 0 && (
           <div className="mt-4">
             <h3 className="font-semibold mb-2">Model Output:</h3>
             <ul className="list-disc list-inside">
@@ -65,6 +71,23 @@ export default function Invest() {
                 <li key={idx}>Class {idx + 1}: {val.toFixed(2)}</li>
               ))}
             </ul>
+          </div>
+        )} */}
+
+        {allocationData && (
+          <div className="space-y-8">
+            <div className="w-full">
+              <TreeMapViz data={allocationData || {}} />
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="w-full">
+                <DonutChart data={allocationData || {}} />
+              </div>
+              <div className="w-full">
+                <TextSummaryBox data={allocationData || {}} />
+              </div>
+            </div>
           </div>
         )}
       </div>
