@@ -3,7 +3,6 @@ import { useState } from 'react';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Savings from './pages/Savings';
-import Assets from './pages/Assets';
 import Invest from './pages/Invest';
 import About from './pages/About';
 import Auth from './pages/Auth';
@@ -19,7 +18,7 @@ export default function App() {
       {!isAuthPage && <Navbar setLoggedIn={setLoggedIn} />}
 
       <Routes>
-        <Route path="/auth" element={loggedIn ? <Navigate to="/" /> : <Auth setLoggedIn={setLoggedIn} />}/>
+        <Route path="/auth" element={loggedIn ? <Navigate to="/" /> : <Auth setLoggedIn={setLoggedIn} />} />
         <Route
           path="/"
           element={
@@ -38,18 +37,6 @@ export default function App() {
             loggedIn ? (
               <div className="p-6 max-w-6xl mx-auto">
                 <Savings />
-              </div>
-            ) : (
-              <Navigate to="/auth" />
-            )
-          }
-        />
-        <Route
-          path="/assets"
-          element={
-            loggedIn ? (
-              <div className="p-6 max-w-6xl mx-auto">
-                <Assets />
               </div>
             ) : (
               <Navigate to="/auth" />

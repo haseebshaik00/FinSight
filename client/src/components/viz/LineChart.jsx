@@ -6,7 +6,6 @@ export default function LineChart({ data }) {
 
   useEffect(() => {
     if (!data || data.length === 0) return;
-
     const svg = d3.select(svgRef.current);
     svg.selectAll("*").remove();
 

@@ -61,8 +61,8 @@ export default function Home() {
 
   return (
     <PageContainer>
-      <div className="bg-white shadow-md rounded-xl p-6 mb-8 w-full">
-        <h3 className="text-xl font-semibold mb-4 text-gray-700">Enter New Expense</h3>
+      <div className="bg-white shadow-md rounded-xl p-4 mb-4 w-full">
+        <h3 className="text-xl font-semibold mb-4 text-gray-700">Enter New Expense!</h3>
         <form
           onSubmit={handleSubmit}
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4"

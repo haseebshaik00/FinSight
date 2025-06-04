@@ -5,3 +5,6 @@ yfinance
 fredapi
 scikit-learn
 torch
+fastapi 
+uvicorn 
+numpy

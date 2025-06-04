@@ -20,8 +20,7 @@ export default function Navbar({ setLoggedIn }) {
         <div className="flex items-center gap-6 text-sm font-medium">
           <Link to="/" className="hover:underline">Dashboard</Link>
           <Link to="/savings" className="hover:underline">Savings</Link>
-          <Link to="/assets" className="hover:underline">Assets</Link>
-          <Link to="/invest" className="hover:underline">Invest</Link>
+          <Link to="/invest" className="hover:underline">Investment Plan</Link>
           <Link to="/about" className="hover:underline">About</Link>
           <button onClick={handleLogout} title="Logout" className="ml-1 hover:opacity-75">
             <img

@@ -65,9 +65,9 @@ export default function PieChart({ data }) {
       .attr("stroke-width", 1.5)
       .transition()
       .duration(800)
-      .attrTween("d", function(d) {
+      .attrTween("d", function (d) {
         const i = d3.interpolate(d.startAngle, d.endAngle);
-        return function(t) {
+        return function (t) {
           d.endAngle = i(t);
           return arc(d);
         };
@@ -75,41 +75,41 @@ export default function PieChart({ data }) {
 
     // Rebind for interactivity
     g.selectAll("path")
-      .on("mouseover", function(event, d) {
+      .on("mouseover", function (event, d) {
         d3.select(this).transition().duration(200).attr("d", arcHover);
         tooltip.transition().duration(200).style("opacity", 1);
         tooltip.html(`<strong>${d.data[0]}</strong><br/>$${d.data[1].toFixed(2)}`)
           .style("left", `${event.pageX + 10}px`)
           .style("top", `${event.pageY - 28}px`);
       })
-      .on("mouseout", function(event, d) {
+      .on("mouseout", function (event, d) {
         d3.select(this).transition().duration(200).attr("d", arc);
         tooltip.transition().duration(300).style("opacity", 0);
       });
 
     // Legend
-const legend = svg.append("g")
-.attr("transform", `translate(${width - 110}, 20)`); // shifted left from width - 20 to width + 20
+    const legend = svg.append("g")
+      .attr("transform", `translate(${width - 110}, 20)`);
 
-categorySums.forEach(([category], i) => {
-const legendRow = legend.append("g")
-  .attr("transform", `translate(0, ${i * 24})`);
+    categorySums.forEach(([category], i) => {
+      const legendRow = legend.append("g")
+        .attr("transform", `translate(0, ${i * 24})`);
 
-legendRow.append("rect")
-  .attr("width", 14)
-  .attr("height", 14)
-  .attr("fill", color(category));
+      legendRow.append("rect")
+        .attr("width", 14)
+        .attr("height", 14)
+        .attr("fill", color(category));
 
-legendRow.append("text")
-  .attr("x", 20)
-  .attr("y", 12)
-  .attr("text-anchor", "start")
-  .style("font-size", "13px")
-  .style("fill", "#black") // dark blue
-  .text(category);
-});
+      legendRow.append("text")
+        .attr("x", 20)
+        .attr("y", 12)
+        .attr("text-anchor", "start")
+        .style("font-size", "13px")
+        .style("fill", "#black")
+        .text(category);
+    });
 
-    return () => tooltip.remove(); // Clean up
+    return () => tooltip.remove();
   }, [data]);
 
   return <svg ref={svgRef}></svg>;
