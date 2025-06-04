@@ -66,7 +66,7 @@ router.get('/forecast', async (req, res) => {
             const savings = income - expenses;
             pastSavingsDict[month] = savings;
             pastSavingsList.push(savings);
-            console.log(`📅 ${month} → Expenses: $${expenses.toFixed(2)}, Savings: $${savings.toFixed(2)}`);
+            console.log(`${month} → Expenses: $${expenses.toFixed(2)}, Savings: $${savings.toFixed(2)}`);
         }
 
         res.json({
@@ -82,7 +82,7 @@ router.get('/forecast', async (req, res) => {
             net_savings: totalSavings
         });
     } catch (err) {
-        console.error('❌ Route Error:', err.message);
+        console.error('Route Error:', err.message);
         res.status(500).json({ error: err.message });
     }
 });
