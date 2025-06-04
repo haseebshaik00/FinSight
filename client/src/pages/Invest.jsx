@@ -20,25 +20,26 @@ export default function Invest() {
   return (
     <PageContainer>
       <div className="p-6 mx-auto bg-white rounded-lg shadow-md">
-        <h2 className="text-2xl font-bold mb-6">Investment Plan Generator</h2>
+        <h2 className="text-2xl font-bold mb-2">Investment Plan Generator</h2>
 
-        <div className="flex flex-col md:flex-row items-end gap-4 mb-6">
-          <div className="flex flex-col w-full md:w-1/3">
-            <label className="block mb-1">Amount</label>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6 items-end">
+          <div className="flex flex-col w-full">
+            <label className="block mb-1"><b>Amount</b></label>
             <input
               type="number"
               value={amount}
               onChange={(e) => setAmount(e.target.value)}
-              className="p-2 border border-gray-300 rounded"
+              placeholder="$ 00.00 USD"
+              className="p-2 border border-gray-300 rounded w-full"
             />
           </div>
 
-          <div className="flex flex-col w-full md:w-1/3">
-            <label className="block mb-1">Risk Profile</label>
+          <div className="flex flex-col w-full">
+            <label className="block mb-1"><b>Risk Profile</b></label>
             <select
               value={risk}
               onChange={(e) => setRisk(e.target.value)}
-              className="p-2 border border-gray-300 rounded"
+              className="p-2 border border-gray-300 rounded w-full"
             >
               <option value="Conservative">Conservative</option>
               <option value="Balanced">Balanced</option>
@@ -46,10 +47,11 @@ export default function Invest() {
             </select>
           </div>
 
-          <div className="flex justify-start w-full md:w-auto">
+          <div className="flex justify-end w-full">
             <button
               onClick={handleSubmit}
-              className="bg-blue-600 text-white px-6 py-2 mt-1 md:mt-0 rounded">
+              className="bg-blue-600 text-white px-6 py-2 rounded w-full"
+            >
               Predict
             </button>
           </div>
@@ -67,5 +69,6 @@ export default function Invest() {
         )}
       </div>
     </PageContainer>
+
   );
 }
