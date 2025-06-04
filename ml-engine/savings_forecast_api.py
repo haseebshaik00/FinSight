@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List, Dict
 import numpy as np
+from allocationPipeline import run_pipeline
 
 app = FastAPI()
 
@@ -37,4 +38,17 @@ def forecast_savings(data: SavingsRequest):
         "forecasted_savings": future,
         "summary_prompt": summary,
         "advice_prompt": advice
+    }
+
+class InvestmentRequest(BaseModel):
+    amount: float
+    risk_profile: str
+
+@app.post("/api/invest")
+def get_investment_plan(request: InvestmentRequest):
+    allocations = run_pipeline(request.amount, request.risk_profile)
+    return {
+        "amount": request.amount,
+        "risk_profile": request.risk_profile,
+        "allocations": allocations
     }
