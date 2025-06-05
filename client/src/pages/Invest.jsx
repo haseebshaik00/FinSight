@@ -25,7 +25,7 @@ export default function Invest() {
   return (
     <PageContainer>
       <div className="p-4 mx-auto bg-white rounded-lg shadow-md mb-2">
-        <h2 className="text-2xl font-bold mb-1">Investment Plan Generator</h2>
+        <h2 className="text-2xl font-bold mb-2">Investment Plan Generator</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-2 items-end">
           <div className="flex flex-col w-full">
             <label className="block mb-1"><b>Amount</b></label>
@@ -115,28 +115,35 @@ export default function Invest() {
           </div>
 
           {/* Stacked Bar + Insights */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
             <div className="bg-white shadow-md rounded-xl p-6">
               <h2 className="text-xl font-semibold mb-3 text-gray-700">Asset Class Distribution</h2>
               <DonutChart data={allocationData || {}} />
             </div>
             <div className="bg-white shadow-md rounded-xl p-6 text-gray-800">
-              <h2 className="text-2xl font-bold mb-8">Investment Breakdown</h2>
-              {Object.entries(allocationData).map(([cls, val]) => (
-                <div key={cls} className="mb-4">
-                  <p className="font-semibold text-indigo-600 mb-1">
-                    {cls.toUpperCase()}: ${val.allocation}
-                  </p>
-                  <ul className="text-sm text-gray-600 pl-4 list-disc">
-                    {Object.entries(val.top_assets).map(([asset, amount]) => (
-                      <li key={asset}>
-                        <em>{asset}</em>: ${amount.toFixed(2)} ({((amount / val.allocation) * 100).toFixed(1)}%)
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
+              <h2 className="text-2xl font-bold mb-6 text-center text-gray-900">Investment Breakdown</h2>
+              <div className="space-y-6">
+                {Object.entries(allocationData).map(([cls, val]) => (
+                  <div key={cls}>
+                    <p className="text-lg font-semibold text-indigo-700 mb-2 border-b border-gray-200 pb-1">
+                      {cls.toUpperCase()}: ${val.allocation}
+                    </p>
+                    <ul className="text-sm text-gray-700 pl-2 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-1">
+                      {Object.entries(val.top_assets).map(([asset, amount]) => (
+                        <li key={asset} className="flex items-start space-x-1">
+                          <span className="text-indigo-500 font-medium">•</span>
+                          <span>
+                            <em>{asset}</em>: ${amount.toFixed(2)}
+                            <span className="text-gray-500"> ({((amount / val.allocation) * 100).toFixed(1)}%)</span>
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
             </div>
+
           </div>
         </>
       )}

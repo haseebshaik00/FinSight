@@ -9,7 +9,7 @@ export default function TreeMapViz({ data }) {
     if (!data) return;
 
     const width = 1000;
-    const height = 300;
+    const height = 250;
 
     const svg = d3.select(svgRef.current);
     svg.selectAll("*").remove();

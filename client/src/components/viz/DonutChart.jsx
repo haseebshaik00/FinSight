@@ -9,7 +9,7 @@ export default function DonutChart({ data }) {
     const svg = d3.select(ref.current);
     svg.selectAll("*").remove();
     const width = 300;
-    const height = 300;
+    const height = 280;
     const radius = Math.min(width, height) / 2;
 
     const color = d3.scaleOrdinal()
@@ -104,5 +104,13 @@ export default function DonutChart({ data }) {
     return () => tooltip.remove();
   }, [data]);
 
-  return <svg ref={ref} className="w-full h-auto" />;
+  return (
+    <div className="flex flex-col items-center">
+      <svg ref={ref} className="w-full h-auto" />
+      <p className="text-sm text-gray-600 mt-3 text-center max-w-xs">
+        This chart shows your overall investment distribution across asset classes.
+        Hover over each slice to view the exact amount and percentage allocated to that category.
+      </p>
+    </div>
+  );
 }
