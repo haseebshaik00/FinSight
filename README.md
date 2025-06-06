@@ -11,7 +11,7 @@ By incorporating user risk profiles and market performance, FinSight delivers dy
 ## Application Setup
 
 > Follow along this youtube video to install the application:
-[FinSight Installation]()
+[FinSight Installation](https://youtu.be/Dke-BLTgQ0I)
 
 ### [0] Clone the repository
 ```shell
