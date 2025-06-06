@@ -119,5 +119,9 @@ App.jsx: main file
 ## MongoDB Database
 ![alt text](./images/image-3.png)
 
+<br/>
+
+<hr>
+
 > 📘 **Disclaimer:**  
-FinSight is intended solely for academic and study purposes. The content is shared publicly to promote open knowledge and may be reused, referenced, or extended by others, provided that appropriate credit is given. Contributions, feedback, and collaborations are welcome!
+FinSight is intended solely for academic and study purposes. The content is shared publicly to promote open knowledge and may be reused, referenced, or extended by others, provided that appropriate credit is given. Contributions, feedback, and collaborations are welcome.
