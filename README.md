@@ -10,6 +10,9 @@ By incorporating user risk profiles and market performance, FinSight delivers dy
 
 ## Application Setup
 
+> Follow along this youtube video to install the application:
+[FinSight Installation]()
+
 ### [0] Clone the repository
 ```shell
 git clone https://github.com/haseebshaik00/FinSight.git
@@ -57,16 +60,24 @@ uvicorn api:app --reload --port 8000
 npm install
 npm run dev
 ```
+- Browse `http://localhost:5173/`
 
-### [5] Test User Login
+### [5] User Login
+- Browse `http://localhost:5173/`
+- Click on Sign in
 ```shell
+User Credentials
 email: test@test.com
 password: test123
 ```
 
+### [6] User Sign Up
+- Browse `http://localhost:5173/`
+- Create new account! (If login doesn't work)
+
 ## Server Handling
 > An efficient way to handle all the servers (client, backend, ml-engine)!
-![alt text](image-5.png)
+![alt text](./images/image-5.png)
 
 ## Folder Structure
 
@@ -97,13 +108,16 @@ App.jsx: main file
 
 ## Expense Dashboard
 
-![alt text](image.png)
+![alt text](./images/image.png)
 
 ## Savings and Forecasted Savings Dashboard
-![alt text](image-2.png)
+![alt text](./images/image-2.png)
 
 ## Investment Plan Dashboard
-![alt text](image-1.png)
+![alt text](./images/image-1.png)
 
 ## MongoDB Database
-![alt text](image-3.png)
+![alt text](./images/image-3.png)
+
+> 📘 **Disclaimer:**  
+FinSight is intended solely for academic and study purposes. The content is shared publicly to promote open knowledge and may be reused, referenced, or extended by others, provided that appropriate credit is given. Contributions, feedback, and collaborations are welcome!
