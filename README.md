@@ -58,6 +58,16 @@ npm install
 npm run dev
 ```
 
+### [5] Test User Login
+```shell
+email: test@test.com
+password: test123
+```
+
+## Server Handling
+> An efficient way to handle all the servers (client, backend, ml-engine)!
+![alt text](image-5.png)
+
 ## Folder Structure
 
 ```bash
