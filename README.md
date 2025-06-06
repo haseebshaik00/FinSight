@@ -8,11 +8,67 @@ FinSight is an intelligent personal finance platform that helps users track expe
 
 By incorporating user risk profiles and market performance, FinSight delivers dynamic, monthly asset allocations across stocks, mutual funds, bonds, crypto, and gold—empowering users to make informed decisions and achieve long-term financial goals with confidence.
 
+## Application Setup
+
+### [0] Clone the repository
+```shell
+git clone https://github.com/haseebshaik00/FinSight.git
+```
+
+### [1] Environment Setup
+- Navigate to the root folder: `FinSight/`
+- This folder contains three folders: client, server and ml-engine
+- Setup up your enviroment using miniconda (optional)
+
+```shell
+conda create -n finsight python=3.12
+conda activate finsight
+```
+
+### [2] Node Server Setup
+- Navigate to the folder `./FinSight/server`
+- Create a .env file in the server folder and place the below content in it:
+```shell
+MONGO_URI=mongodb+srv://finsight123:finsight123@finsight-cluster.xi4is99.mongodb.net/finsightDB?retryWrites=true&w=majority
+JWT_SECRET=myjwtsecret
+```
+- Install the required packages and boot the server
+```shell
+npm install
+npm run dev
+```
+
+### [3] FAST API Server Setup
+- Navigate to the folder `./FinSight/ml-engine`
+- Install the required packages
+```shell
+pip install -r requirements.txt
+```
+- Finally, start your api server:
+```shell
+uvicorn api:app --reload --port 8000
+```
+
+### [4] Client Setup
+
+- Navigate to the folder `./FinSight/client`
+- Install the required packages and start the client
+```shell
+npm install
+npm run dev
+```
+
 ## Application Walkthrough
 
-## FinSight Dashboard
+## Expense Dashboard
 
 ![alt text](image.png)
+
+## Savings and Forecasted Savings Dashboard
+![alt text](image-2.png)
+
+## Investment Plan Dashboard
+![alt text](image-1.png)
 
 ## Folder Structure
 
