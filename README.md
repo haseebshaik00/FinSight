@@ -38,13 +38,13 @@ npm install
 npm run dev
 ```
 
-### [3] FAST API Server Setup
+### [3] Fast API Server Setup
 - Navigate to the folder `./FinSight/ml-engine`
 - Install the required packages
 ```shell
 pip install -r requirements.txt
 ```
-- Finally, start your api server:
+- Finally, start your Fast API server:
 ```shell
 uvicorn api:app --reload --port 8000
 ```
