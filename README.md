@@ -32,7 +32,7 @@ conda activate finsight
 - Navigate to the folder `./FinSight/server`
 - Create a .env file in the server folder and place the below content in it:
 ```shell
-MONGO_URI=mongodb+srv://finsight123:finsight123@finsight-cluster.xi4is99.mongodb.net/finsightDB?retryWrites=true&w=majority
+MONGO_URI=myjwtsecret
 JWT_SECRET=myjwtsecret
 ```
 - Install the required packages and boot the server
