@@ -14,7 +14,7 @@ By incorporating user risk profiles and market performance, FinSight delivers dy
 [FinSight Installation](https://youtu.be/Dke-BLTgQ0I)
 
 ## Project Walkthrough
-[![FinSight Walkthrough](https://github.com/haseebshaik00/FinSight/tree/main/images/finsight-yt.png)](https://www.youtube.com/watch?v=Xxr4JD4Qgj4)
+[![FinSight Walkthrough](./images/finsight-yt.png)](https://www.youtube.com/watch?v=Xxr4JD4Qgj4)
 
 ### [0] Clone the repository
 ```shell
