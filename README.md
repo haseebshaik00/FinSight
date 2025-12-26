@@ -13,6 +13,9 @@ By incorporating user risk profiles and market performance, FinSight delivers dy
 > Follow along this youtube video to install the application:
 [FinSight Installation](https://youtu.be/Dke-BLTgQ0I)
 
+## Project Walktrhoygh
+> [![Youtube Video]()](https://www.youtube.com/watch?v=Xxr4JD4Qgj4)
+
 ### [0] Clone the repository
 ```shell
 git clone https://github.com/haseebshaik00/FinSight.git
