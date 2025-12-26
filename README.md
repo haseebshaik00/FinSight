@@ -83,6 +83,7 @@ password: test123
 
 ## Server Handling
 > An efficient way to handle all the servers (client, backend, ml-engine)!
+
 ![alt text](./images/image-5.png)
 
 ## Folder Structure
@@ -112,17 +113,17 @@ App.jsx: main file
 
 ## Application Walkthrough
 
-## Expense Dashboard
+### [1] Expense Dashboard
 
 ![alt text](./images/image.png)
 
-## Savings and Forecasted Savings Dashboard
+### [2] Savings and Forecasted Savings Dashboard
 ![alt text](./images/image-2.png)
 
-## Investment Plan Dashboard
+### [3] Investment Plan Dashboard
 ![alt text](./images/image-1.png)
 
-## MongoDB Database
+### [4] MongoDB Database
 ![alt text](./images/image-3.png)
 
 <br/>
