@@ -8,6 +8,9 @@ FinSight is an intelligent personal finance platform that helps users track expe
 
 By incorporating user risk profiles and market performance, FinSight delivers dynamic, monthly asset allocations across stocks, mutual funds, bonds, crypto, and gold—empowering users to make informed decisions and achieve long-term financial goals with confidence.
 
+## FinSight Architecture
+![FinSight Architecture](./images/architecture.png)
+
 ## Application Setup
 
 > Follow along this youtube video to install the application:
