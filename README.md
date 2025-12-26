@@ -16,15 +16,15 @@ By incorporating user risk profiles and market performance, FinSight delivers dy
 > Follow along this youtube video to install the application:
 [FinSight Installation](https://youtu.be/Dke-BLTgQ0I)
 
-## Project Walkthrough
+### [0] Project Walkthrough
 [![FinSight Walkthrough](./images/finsight-yt.png)](https://www.youtube.com/watch?v=Xxr4JD4Qgj4)
 
-### [0] Clone the repository
+### [1] Clone the repository
 ```shell
 git clone https://github.com/haseebshaik00/FinSight.git
 ```
 
-### [1] Environment Setup
+### [2] Environment Setup
 - Navigate to the root folder: `FinSight/`
 - This folder contains three folders: client, server and ml-engine
 - Setup up your enviroment using miniconda (optional)
@@ -34,7 +34,7 @@ conda create -n finsight python=3.12
 conda activate finsight
 ```
 
-### [2] Node Server Setup
+### [3] Node Server Setup
 - Navigate to the folder `./FinSight/server`
 - Create a .env file in the server folder and place the below content in it:
 ```shell
@@ -47,7 +47,7 @@ npm install
 npm run dev
 ```
 
-### [3] Fast API Server Setup
+### [4] Fast API Server Setup
 - Navigate to the folder `./FinSight/ml-engine`
 - Install the required packages
 ```shell
@@ -58,7 +58,7 @@ pip install -r requirements.txt
 uvicorn api:app --reload --port 8000
 ```
 
-### [4] Client Setup
+### [5] Client Setup
 
 - Navigate to the folder `./FinSight/client`
 - Install the required packages and start the client
@@ -68,7 +68,7 @@ npm run dev
 ```
 - Browse `http://localhost:5173/`
 
-### [5] User Login
+### [6] User Login
 - Browse `http://localhost:5173/`
 - Click on Sign in
 ```shell
@@ -77,7 +77,7 @@ email: test@test.com
 password: test123
 ```
 
-### [6] User Sign Up
+### [7] User Sign Up
 - Browse `http://localhost:5173/`
 - Create new account! (If login doesn't work)
 
