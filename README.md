@@ -4,9 +4,7 @@ A Smart Visual Analytics Platform for Personal Finance Tracking &amp; Goal-Orien
 
 ## Description
 
-FinSight is an intelligent personal finance platform that helps users track expenses, analyze spending habits, and visualize financial trends through intuitive and interactive dashboards. Beyond expense tracking, it leverages machine learning and real-time asset data to forecast savings and generate personalized investment plans.
-
-By incorporating user risk profiles and market performance, FinSight delivers dynamic, monthly asset allocations across stocks, mutual funds, bonds, crypto, and gold—empowering users to make informed decisions and achieve long-term financial goals with confidence.
+FinSight is an intelligent personal finance platform that helps users track expenses, analyze spending habits, and visualize financial trends through intuitive and interactive dashboards. Beyond expense tracking, it leverages machine learning and real-time asset data to forecast savings and generate personalized investment plans. By incorporating user risk profiles and market performance, FinSight delivers dynamic, monthly asset allocations across stocks, mutual funds, bonds, crypto, and gold, empowering users to make informed decisions and achieve long-term financial goals with confidence.
 
 ## FinSight Architecture
 ![FinSight Architecture](./images/architecture.png)
@@ -14,7 +12,7 @@ By incorporating user risk profiles and market performance, FinSight delivers dy
 ## Application Setup
 
 > Follow along this youtube video to install the application:
-[FinSight Installation](https://youtu.be/Dke-BLTgQ0I)
+[FinSight Installation | YouTube](https://youtu.be/Dke-BLTgQ0I)
 
 ### [0] Project Walkthrough
 [![FinSight Walkthrough](./images/finsight-yt.png)](https://www.youtube.com/watch?v=Xxr4JD4Qgj4)
