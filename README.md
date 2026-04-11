@@ -130,3 +130,4 @@ App.jsx: main file
 
 > 📘 **Disclaimer:**  
 FinSight is intended solely for academic and study purposes. The content is shared publicly to promote open knowledge and may be reused, referenced, or extended by others, provided that appropriate credit is given. Contributions, feedback, and collaborations are welcome.
+>
